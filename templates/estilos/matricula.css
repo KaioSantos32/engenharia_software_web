@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(17, 17, 182, 0.767);
+    margin: 0px;
+}
+
+/*HEADER*/
+img {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: left;
+}
+
+/*MAIN*/
+.container {
+    margin: 0px;
+    position: relative;
+    width: 99.9 ;
+    height: 88vh;
+    padding-top: 10px;
+}
+
+.esquerda_sup {
+    background-color: white;
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.esquerda_inf {
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.direita {
+        position: absolute;
+    background-color: #B8B5BF;
+    top: 30%;
+    left: 50%;
+    border-radius: 5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #111536;
+}
+
+.direita > h1 {
+    font-size: 1.1em;
+    font-weight: none;
+    margin: 30px;
+    text-decoration: underline;
+}
+
+.direita > label {
+    margin: 10px;
+}
+
+.direita > input {
+    margin: 5px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+}
+
+.direita > button {
+    margin: 10px 100px;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+}
