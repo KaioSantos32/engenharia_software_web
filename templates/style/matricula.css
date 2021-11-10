@@ -21,6 +21,7 @@ body{
 .fixed-header{
     top:0;
     left: 0;
+    display:block;
 }
 
 nav a{
@@ -49,7 +50,8 @@ nav a{
     width: 10%;
 
     margin-left: 1%;
-    margin-bottom: 5%;
+    
+    /*margin-bottom: 5%;*/
 
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -136,24 +138,63 @@ nav a{
 
 
 
-@media (max-width: 1000px){
+@media (max-width: 800px){
 
-    .fixed-header, .fixed-header p{
-        
+    .fixed-header, .fixed-header{}
+
+    .conta_info{        
+
     }
 
-
     body{
-        background-color: blue;
+        background-color: rgb(196, 196, 196);
     }
 
     .formulario{ 
-/*        position: absolute;*/
-        height:100%;
-        width: 100%;
-        
-
+        display: inherit;
         background-color: #f0f0f0;
-        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -25%;
+    
     }
 }
+
+@media (max-width: 650px){
+
+    .formulario{ 
+        display: inherit;
+        background-color: #f0f0f0;
+        position: absolute;
+        width: 100%;
+        height: 110%;
+        left: -25%;
+        border-radius: 0;
+        top: 13%;
+    
+    }
+    .botao_Cancela {
+        width: 40%;
+        margin-left: 7%;
+        margin-top: 5%;
+        font-size: 70;
+        display: block;
+        margin-left: 30%;
+    
+    }
+    .botao_Proximo{
+        width: 40%;
+        margin-left: 7%;
+        margin-top: 5%;
+        font-size: 70;
+        display: block;
+        margin-left: 30%;
+        
+    }
+
+    .conta_info{
+        display: none;
+    }
+}
+

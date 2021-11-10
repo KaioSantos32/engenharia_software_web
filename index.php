@@ -28,8 +28,9 @@
                     echo "Dados invalidos";
                 }
             }
-                include('templates/index.html');
-        }else{
+            include('templates/index.html');            
+        }
+        else{
             if(isset($_GET['logout'])){
                 unset($_SESSION['login']);
                 session_destroy();
@@ -37,6 +38,12 @@
             }
             include('templates/matricula.html');
         }
+        
+        if(isset($_GET['tranca_matricula'])){
+            header('Location: index.php');
+        }
+        include('templates/tranca_matricula.html');
+        
     ?>
 </body>
 </html>

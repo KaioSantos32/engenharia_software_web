@@ -14,6 +14,14 @@
         alert("Cadastro feito com sucesso!")
     }
 
+    function Limpa_input(){
+        i=0
+        for (i in allForm){
+            target.value = ""
+            i++
+        }
+    }
+
 </script>
 
 <body>
@@ -40,9 +48,10 @@
             </label>
             <div class='botoes_escolha'>
                 <label >
-                    <button >Matrícula </button> 
-                    <button >Rematrícula </button>
-                    <button >Trancar matrícula </button><br><br>
+                    <button class="button" name='cria_matricula' type="submit">Matrícula </button> <br>
+                    <button class="button" name='rematricula' type="submit">Rematrícula </button><br>
+
+                    <button class="button" name='tranca_matricula' type="submit">Trancar matrícula </button><br><br>
                 </label>
             </div>
                 
@@ -50,11 +59,11 @@
 
 
         <div class='formulario'>                
-            <div >  
+            <form id='allForm'>  
                 <h1>Matricula</h1>                  
                 <div id='form1'>
                     <label>Nome</label> <br>
-                    <input type="text" name="nome"> <br>
+                    <input type="text" name="nome" id ='nome'> <br>
                 
                     <label>Sobrenome</label> <br>
                     <input type="text" name="sobrenome"> <br>
@@ -98,11 +107,12 @@
                     <label>Turma</label> <br>
                     <input type="text" name="turma"> <br><!---->
                 </div>
+            
                 <div>
-                    <button class="botao_Cancela">CANCELAR</button> 
+                    <button class="botao_Cancela" type="reset" value="Reset form">CANCELAR</button> 
                     <button class="botao_Proximo" onclick="Alerta_Enviado()">MATRICULAR</button>
                 </div>
-            </div>
+            </form>
         </div>
 
 
