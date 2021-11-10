@@ -1,2 +1,153 @@
 @charset "UTF-8";
 
+body{
+    background-color: rgb(196, 196, 196);
+    margin-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+
+/* CRIANDO O HEADER FIXO*/
+
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.fixed-header{
+    top:0;
+    left: 0;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+    
+}
+.servico{
+    text-decoration: underline;
+    color: orange;
+}
+
+.sair{
+    color: red;
+}
+
+/*.container p{
+    line-height: 200px;  Create scrollbar to test positioning 
+}*/
+
+/*CONFIGURANDO O BOZ QUE APARECE DO LADO ESQUERDO DA TELA*/
+.conta_info{
+    position: absolute;
+    display: inline-block;
+    
+    width: 10%;
+
+    margin-left: 1%;
+    margin-bottom: 5%;
+
+    background-color: #f0f0f0;
+    border-radius: 10px;
+
+    padding: 1%; 
+
+}
+
+.conta_info p{
+    text-align: center;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+.conta_info label{
+    margin-top: 5%;
+}
+
+.conta_info button{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.botoes_escolha{
+    margin-top: 5%;
+}
+
+/* CONFIGURANDO O FORMULARIO*/
+
+.formulario{ 
+    display: inline-block;   
+    width: 30%;
+    
+
+    background-color: #f0f0f0;
+    text-align: center;
+
+    border-radius: 15px;
+    
+    margin-top: 0;
+    margin-left: 30%;
+    padding-bottom: 3%;
+
+}
+
+.formulario input{
+    width: 90%;
+}
+
+#form1{
+    display: inline-block;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#form2{
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.botao_Cancela {
+    width:30%;
+    margin-top: 5%;
+    margin-right:5%;
+    margin-left:0;
+
+    font-size: 90%;
+
+}
+.botao_Proximo{
+    width:30%;
+    margin-left:7%;
+    margin-top: 5%;
+}
+
+@media (max-width: 1000px){
+
+    .fixed-header, .fixed-header p{
+        
+    }
+
+
+    body{
+        background-color: blue;
+    }
+
+    .formulario{ 
+        position: absolute;
+        height:100%;
+        width: 100%;
+        
+
+        background-color: #f0f0f0;
+        text-align: center;
+    }
+}

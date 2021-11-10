@@ -5,37 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style/matricula.css">
+    <link rel="stylesheet" href="templates/style/matricula.css">
     <title>Matrícula</title>
 </head>
 
 <body>
 
     <header>
-            <p>Menu</p>
-        
+        <div class="fixed-header">
+            <div class="container">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a class='servico' href="#">Serviços</a>
+                    <a href="#">Contatos</a>
+                    <a class='sair' href="?logout">Sair</a><br>
+                </nav>
+            </div>
+        </div>       
     </header>
 
     <main>
-        <div>
             <div class="conta_info">
                 <label>
-                    Nome do administrador <br>
-                    Número de usuário <br><br>
+                    <p>Nome do administrador</p>
+                    <p>Número de usuário</p>              
+                </label>
+                <div class='botoes_escolha'>
+                    <label >
+                        <button >Matrícula </button> 
+                        <button >Rematrícula </button>
+                        <button >Trancar matrícula </button><br><br>
+                    </label>
+                </div>
                     
-                </label>
-                <label>
-                    <button class="btn_escolha_situacao">Matrícula </button> 
-                    <button class="btn_escolha_situacao">Rematrícula </button>
-                    <button class="btn_escolha_situacao">Trancar matrícula </button><br><br>
-                </label>
-                <a href="?logout">Sair</a><br>
             </div>
 
-            <div>
-                <div>
-                    <h1>Matricula</h1>
-                    <div class='entradas'>                    
+
+            <div>                
+                <div class='formulario'>  
+                    <h1>Matricula</h1>                  
+                    <div id='form1'>
                         <label>Nome</label> <br>
                         <input type="text" name="nome"> <br>
                     
@@ -47,28 +57,31 @@
                     
                         <label>Nacionalidade</label> <br>
                         <input type="text" name="nacionalidade"> <br>
-    
+
                         <label>CPF</label> <br>
                         <input type="text" name="cpf"> <br>
                     
                         <label>RG</label> <br>
                         <input type="text" name="rg"> <br>
-    
+
+                        <label>Escolaridade</label> <br>
+                        <input type="text" name="escolaridade"> <br>
+                    </div>
+                    <div id='form2'>
                         <label>Endereço</label> <br>
                         <input type="text" name="endereco"> <br><!---->
-    
+
                         <label>Número</label> <br>                    
                         <input type="text" name="numero"> <br>
-    
+
                         <label>Cidade</label> <br>
                         <input type="text" name="cidade"> <br>
                     
                         <label>Estado</label> <br>
                         <input type="text" name="estado"> <br>
-    
-                        <label>Escolaridade</label> <br>
-                        <input type="text" name="escolaridade"> <br>
-    
+
+                        
+
                         <label>Curso escolhido</label> <br>
                         <input type="text" name="curso_escolhido"> <br>
                     
@@ -78,11 +91,14 @@
                         <label>Turma</label> <br>
                         <input type="text" name="turma"> <br><!---->
                     </div>
-                    <br>
-                    <button class="botao">CANCELAR</button> 
-                    <button class="botao">PRÓXIMO</button>
+                    <div>
+                        <button class="botao_Cancela">CANCELAR</button> 
+                        <button class="botao_Proximo">PRÓXIMO</button>
+                    </div>
                 </div>
-        </div>
+                <br>
+
+
 
         
     </main>
