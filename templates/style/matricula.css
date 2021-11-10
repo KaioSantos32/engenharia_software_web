@@ -39,9 +39,7 @@ nav a{
     color: red;
 }
 
-/*.container p{
-    line-height: 200px;  Create scrollbar to test positioning 
-}*/
+
 
 /*CONFIGURANDO O BOZ QUE APARECE DO LADO ESQUERDO DA TELA*/
 .conta_info{
@@ -84,7 +82,9 @@ nav a{
 
 .formulario{ 
     display: inline-block;   
-    width: 30%;
+    position:inherit;
+
+    width: 50%;
     
 
     background-color: #f0f0f0;
@@ -93,8 +93,10 @@ nav a{
     border-radius: 15px;
     
     margin-top: 0;
-    margin-left: 30%;
+    margin-left: 25%;
     padding-bottom: 3%;
+
+    
 
 }
 
@@ -128,7 +130,11 @@ nav a{
     width:30%;
     margin-left:7%;
     margin-top: 5%;
+
+    font-size: 90%;
 }
+
+
 
 @media (max-width: 1000px){
 
@@ -142,7 +148,7 @@ nav a{
     }
 
     .formulario{ 
-        position: absolute;
+/*        position: absolute;*/
         height:100%;
         width: 100%;
         

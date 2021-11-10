@@ -9,6 +9,13 @@
     <title>Matrícula</title>
 </head>
 
+<script>
+    function Alerta_Enviado(){
+        alert("Cadastro feito com sucesso!")
+    }
+
+</script>
+
 <body>
 
     <header>
@@ -26,78 +33,77 @@
     </header>
 
     <main>
-            <div class="conta_info">
-                <label>
-                    <p>Nome do administrador</p>
-                    <p>Número de usuário</p>              
+        <div class="conta_info">
+            <label>
+                <p>Nome do administrador</p>
+                <p>Número de usuário</p>              
+            </label>
+            <div class='botoes_escolha'>
+                <label >
+                    <button >Matrícula </button> 
+                    <button >Rematrícula </button>
+                    <button >Trancar matrícula </button><br><br>
                 </label>
-                <div class='botoes_escolha'>
-                    <label >
-                        <button >Matrícula </button> 
-                        <button >Rematrícula </button>
-                        <button >Trancar matrícula </button><br><br>
-                    </label>
-                </div>
-                    
             </div>
+                
+        </div>
 
 
-            <div>                
-                <div class='formulario'>  
-                    <h1>Matricula</h1>                  
-                    <div id='form1'>
-                        <label>Nome</label> <br>
-                        <input type="text" name="nome"> <br>
-                    
-                        <label>Sobrenome</label> <br>
-                        <input type="text" name="sobrenome"> <br>
-                    
-                        <label>Idade</label> <br>
-                        <input type="text" name="idade" id="idade"> <br>
-                    
-                        <label>Nacionalidade</label> <br>
-                        <input type="text" name="nacionalidade"> <br>
+        <div class='formulario'>                
+            <div >  
+                <h1>Matricula</h1>                  
+                <div id='form1'>
+                    <label>Nome</label> <br>
+                    <input type="text" name="nome"> <br>
+                
+                    <label>Sobrenome</label> <br>
+                    <input type="text" name="sobrenome"> <br>
+                
+                    <label>Idade</label> <br>
+                    <input type="text" name="idade" id="idade"> <br>
+                
+                    <label>Nacionalidade</label> <br>
+                    <input type="text" name="nacionalidade"> <br>
 
-                        <label>CPF</label> <br>
-                        <input type="text" name="cpf"> <br>
-                    
-                        <label>RG</label> <br>
-                        <input type="text" name="rg"> <br>
+                    <label>CPF</label> <br>
+                    <input type="text" name="cpf"> <br>
+                
+                    <label>RG</label> <br>
+                    <input type="text" name="rg"> <br>
 
-                        <label>Escolaridade</label> <br>
-                        <input type="text" name="escolaridade"> <br>
-                    </div>
-                    <div id='form2'>
-                        <label>Endereço</label> <br>
-                        <input type="text" name="endereco"> <br><!---->
-
-                        <label>Número</label> <br>                    
-                        <input type="text" name="numero"> <br>
-
-                        <label>Cidade</label> <br>
-                        <input type="text" name="cidade"> <br>
-                    
-                        <label>Estado</label> <br>
-                        <input type="text" name="estado"> <br>
-
-                        
-
-                        <label>Curso escolhido</label> <br>
-                        <input type="text" name="curso_escolhido"> <br>
-                    
-                        <label>Período</label> <br>
-                        <input type="text" name="periodo"> <br>
-                    
-                        <label>Turma</label> <br>
-                        <input type="text" name="turma"> <br><!---->
-                    </div>
-                    <div>
-                        <button class="botao_Cancela">CANCELAR</button> 
-                        <button class="botao_Proximo">PRÓXIMO</button>
-                    </div>
+                    <label>Escolaridade</label> <br>
+                    <input type="text" name="escolaridade"> <br>
                 </div>
-                <br>
+                <div id='form2'>
+                    <label>Endereço</label> <br>
+                    <input type="text" name="endereco"> <br><!---->
 
+                    <label>Número</label> <br>                    
+                    <input type="text" name="numero"> <br>
+
+                    <label>Cidade</label> <br>
+                    <input type="text" name="cidade"> <br>
+                
+                    <label>Estado</label> <br>
+                    <input type="text" name="estado"> <br>
+
+                    
+
+                    <label>Curso escolhido</label> <br>
+                    <input type="text" name="curso_escolhido"> <br>
+                
+                    <label>Período</label> <br>
+                    <input type="text" name="periodo"> <br>
+                
+                    <label>Turma</label> <br>
+                    <input type="text" name="turma"> <br><!---->
+                </div>
+                <div>
+                    <button class="botao_Cancela">CANCELAR</button> 
+                    <button class="botao_Proximo" onclick="Alerta_Enviado()">MATRICULAR</button>
+                </div>
+            </div>
+        </div>
 
 
         
