@@ -39,11 +39,6 @@
             include('templates/matricula.html');
         }
         
-        if(isset($_GET['tranca_matricula'])){
-            header('Location: index.php');
-        }
-        include('templates/tranca_matricula.html');
-        
     ?>
 </body>
 </html>

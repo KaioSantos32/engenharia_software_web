@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="templates/style/matricula.css">
+    <link rel="stylesheet" href="templates/style/matricula.css">    
     <title>Matrícula</title>
 </head>
 
@@ -14,13 +14,7 @@
         alert("Cadastro feito com sucesso!")
     }
 
-    function Limpa_input(){
-        i=0
-        for (i in allForm){
-            target.value = ""
-            i++
-        }
-    }
+    
 
 </script>
 
@@ -48,10 +42,13 @@
             </label>
             <div class='botoes_escolha'>
                 <label >
-                    <button class="button" name='cria_matricula' type="submit">Matrícula </button> <br>
-                    <button class="button" name='rematricula' type="submit">Rematrícula </button><br>
-
-                    <button class="button" name='tranca_matricula' type="submit">Trancar matrícula </button><br><br>
+                    <button class="buttonMatricula" name='cria_matricula' type="submit">Matrícula </button> 
+                </label>
+                <label>
+                    <button class="buttonRematricula" name='rematricula' type="submit">Rematrícula </button>
+                </label>
+                <label>
+                    <button class="buttonTranca" name='tranca_matricula' type="submit">Trancar matrícula </button><br><br>
                 </label>
             </div>
                 
