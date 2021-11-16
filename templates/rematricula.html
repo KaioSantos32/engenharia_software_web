@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="templates/style/rematricula.css">    
+    <title>Rematrícula</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="fixed-header">
+            <div class="container">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a class='servico' href="#">Serviços</a>
+                    <a href="#">Contatos</a>
+                    <a class='sair' href="?logout">Sair</a><br>
+                </nav>
+            </div>
+        </div>       
+    </header>
+
+    <main>
+        <div class="conta_info">
+            <label>
+                <p>Nome do administrador</p>
+                <p>Número de usuário</p>              
+            </label>
+            <div class='botoes_escolha'>
+                <label >
+                    <button class="buttonMatricula" name='cria_matricula' type="submit">Matrícula </button> 
+                </label>
+                <label>
+                    <button class="buttonRematricula" name='rematricula' type="submit">Rematrícula </button>
+                </label>
+                <label>
+                    <button class="buttonTranca" name='tranca_matricula' type="submit">Trancar matrícula </button><br><br>
+                </label>
+            </div>
+                
+        </div>
+
+
+        <div class='formulario'>                
+            <form id='allForm'>  
+                <h1>Rematricula</h1>                  
+                <div id='form1'>
+                    
+                </div>
+            
+                <div>
+                    <button class="botao_Cancela" type="reset" value="Reset form">CANCELAR</button> 
+                    <button class="botao_Proximo" onclick="Alerta_Enviado()">REMATRICULAR</button>
+                </div>
+            </form>
+        </div>
+
+
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

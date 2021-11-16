@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+
 body{
-    background-color: rgb(196, 196, 196);
+    
+    background-image: url('/opt/lampp/htdocs/webalizer/engenharia_software_web/templates/media/background_photo.png');
     margin-top: 10%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
@@ -44,7 +46,7 @@ nav a{
 
 /*CONFIGURANDO O BOZ QUE APARECE DO LADO ESQUERDO DA TELA*/
 .conta_info{
-    position: absolute;
+    position: fixed;
     display: inline-block;
     
     width: 10%;
@@ -149,23 +151,20 @@ nav a{
 
 @media (max-width: 800px){
 
-    .fixed-header, .fixed-header{}
-
-    .conta_info{        
-
-    }
-
     body{
-        background-color: rgb(196, 196, 196);
+        background-image: url('');
     }
+
 
     .formulario{ 
         display: inherit;
         background-color: #f0f0f0;
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100%;
         left: -25%;
+        top: 7%;
+        border-radius: 0;
     
     }
 }

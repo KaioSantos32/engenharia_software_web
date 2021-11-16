@@ -8,14 +8,10 @@
     <link rel="stylesheet" href="templates/style/matricula.css">    
     <title>Matrícula</title>
 </head>
-
 <script>
-    function Alerta_Enviado(){
-        alert("Cadastro feito com sucesso!")
+    function Alerta_Matricula(){
+        alert("Matricula feita com sucesso!")
     }
-
-    
-
 </script>
 
 <body>
@@ -45,7 +41,7 @@
                     <button class="buttonMatricula" name='cria_matricula' type="submit">Matrícula </button> 
                 </label>
                 <label>
-                    <button class="buttonRematricula" name='rematricula' type="submit">Rematrícula </button>
+                    <button class="buttonRematricula" name='rematricula' type="submit" href='rematricula.html'>Rematrícula </button>
                 </label>
                 <label>
                     <button class="buttonTranca" name='tranca_matricula' type="submit">Trancar matrícula </button><br><br>
@@ -107,7 +103,7 @@
             
                 <div>
                     <button class="botao_Cancela" type="reset" value="Reset form">CANCELAR</button> 
-                    <button class="botao_Proximo" onclick="Alerta_Enviado()">MATRICULAR</button>
+                    <button class="botao_Proximo" onclick="Alerta_Matricula()" value="Reset form">MATRICULAR</button>
                 </div>
             </form>
         </div>

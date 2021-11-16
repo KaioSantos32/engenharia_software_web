@@ -9,13 +9,20 @@
 
     <title>Login</title>
 </head>
+<script>
+    function alerta_cadastro(){
+        alert("usuario ou senha errados")
+    }   
+</script>
 <body>
 
     <?php
 
 
         if (!isset($_SESSION['login'])){
+
             if(isset($_POST['acao'])){
+
                 $login = 'paulo';
                 $senha = '123456'; 
                 $loginForm = $_POST['username'];
@@ -24,9 +31,14 @@
                 if($login == $loginForm && $senha == $senhaForm){
                     $_SESSION['login'] = true;
                     header('Location: index.php');
-                }else{
-                    echo "Dados invalidos";
                 }
+                else{ 
+                    echo '<script type="text/javascript">';
+                    echo ' alert("Usuario ou senha invalidos")';  //not showing an alert box.
+                    echo '</script>';
+                }
+   
+                
             }
             include('templates/index.html');            
         }
@@ -38,6 +50,15 @@
             }
             include('templates/matricula.html');
         }
+
+
+
+        
+
+        
+        
+    
+
         
     ?>
 </body>
