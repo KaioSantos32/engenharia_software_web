@@ -49,7 +49,7 @@ nav a{
     position: fixed;
     display: inline-block;
     
-    width: 10%;
+    width: 10vw;
 
     margin-left: 1%;
     
@@ -73,10 +73,11 @@ nav a{
 }
 
 .conta_info button{
-    width: 80%;
+    width: 9vw;
     margin-top: 5%;
     margin-left: 10%;
-    background-color: rgb(173, 173, 173);
+    font-size: 1.4vw;
+    
 }
 
 .botoes_escolha{
@@ -84,8 +85,11 @@ nav a{
 }
 
 .buttonMatricula{
-    background-color:rgb(84, 108, 216);
+    background-color: rgb(11, 53, 244);
     padding: 0;
+    color: white;
+    border-radius: 3px;
+    
 }
 /* CONFIGURANDO O FORMULARIO*/
 
@@ -149,6 +153,8 @@ nav a{
 
 
 
+
+
 @media (max-width: 800px){
 
     body{
@@ -167,7 +173,20 @@ nav a{
         border-radius: 0;
     
     }
+
+    .dropdown { position: relative; }
+    .dropdown__menu { display: none; }
+
+    /* To make the drop down show on hover, uncomment the next line */
+    .dropdown:hover .dropdown__menu, 
+    .dropdown--open .dropdown__menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    }
 }
+
 
 @media (max-width: 650px){
 
@@ -203,6 +222,18 @@ nav a{
 
     .conta_info{
         display: none;
+    }
+
+    .dropdown { position: relative; }
+    .dropdown__menu { display: none; }
+
+    /* To make the drop down show on hover, uncomment the next line */
+    .dropdown:hover .dropdown__menu, 
+    .dropdown--open .dropdown__menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
     }
 }
 
