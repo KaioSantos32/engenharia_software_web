@@ -2,8 +2,8 @@
 
 
 body{
-    
-    background-image: url('/opt/lampp/htdocs/webalizer/engenharia_software_web/templates/media/background_photo.png');
+
+    background-color: rgb(136, 136, 136);
     margin-top: 10%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
@@ -75,7 +75,7 @@ nav a{
 .conta_info button{
     width: 9vw;
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 5%;
     font-size: 1.4vw;
     
 }
